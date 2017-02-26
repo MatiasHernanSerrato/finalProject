@@ -105,7 +105,7 @@ video {
 
 @media all
        and (orientation : andscape)
-       and (max-width   : 640px) {
+       and (max-width   : 743px) {
   #optionOrderBy select {
     width      : 50%;
     float      : right;
@@ -154,6 +154,29 @@ video {
     width : 100%;
   }
 
+  #editElement {
+    padding : 4px;
+  }
+
+  #editElement .selectG{
+    width      : 50%;
+    float      : right;
+    text-align : right;
+  }
+  #editElement input {
+    width      : 50%;
+    float      : right;
+    text-align : right;
+  }
+
+  #editElement span {
+    display     : block;
+    width       : 100%;
+    text-align  : left;
+    font-size   : 15px;
+    line-height : 25px;
+  }
+
   #optionOrderBy select {
     width      : 50%;
     float      : right;
@@ -194,16 +217,21 @@ video {
     padding : 0px 5px;
   }
 
-  #editElement {
-    padding : 4px;
-  }
-
   #optionOrderBy select {
     width      : 50%;
     float      : right;
     text-align : right;
   }
 
+  #editElement {
+    padding : 4px;
+  }
+
+  #editElement .selectG{
+    width      : 50%;
+    float      : right;
+    text-align : right;
+  }
   #editElement input {
     width      : 50%;
     float      : right;
