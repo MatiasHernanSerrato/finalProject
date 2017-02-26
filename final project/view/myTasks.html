@@ -1,0 +1,57 @@
+<div id="containerHome" draggable="false">
+    <div id="containerOfElements">
+        <div id="titleOfList">
+            <span id="trueTitle">
+          <h1><span class="icon-paperplane">My tasks <span class="icon-accessibility"><input  type="checkbox" ng-model="styleNg.daltonico" /></span></span>
+            </h1>
+            </span>
+            <div id="busqueda">
+                <span id="icon" class="icon-search"></span><input id="s" type="text" class='input-text' ng-model="searchText" placeholder="Search.." />
+            </div>
+            <div id="totalTasks">
+                <h4>You have {{getTotal()}} task/s</h4>
+            </div>
+            <div id="optionOrderBy">
+                <span>Filter by status <select ng-model="filterStatus" ng-options="itemSt.name for itemSt in filterStatusItem"></select></span>
+                <span>Filter by priority <select ng-model="filterPriority" ng-options="itemPr.name for itemPr in filterPriorityItem"></select></span>
+                <span>Order by <select ng-model="sortColumn" ng-options="itemC.name for itemC in sortTasks"></select></span>
+                <div id="btnsTask">
+                    <button id="cCompleted" ng-click="clearCompleted()" class="styleButtonForm">Delete selected</button>
+                    <button id="cAll" ng-click="clearAll()" class="styleButtonForm">Clear all</button>
+                </div>
+            </div>
+        </div>
+        <div id="areaToShow">
+            <div id="editElement" ng-show="showEditElement">
+                <span>Title:<input type="text" id="name" ng-model="current.title" value="{{current.title}}" /></span>
+                <span>Description:<input type="text" id="description" ng-model="current.description" value="{{current.description}}" /></span>
+                <span>Status:<select id="selectTypeG" class="selectG" ng-model="current.status" ng-options="itemN.name for itemN in optionsStatus"></select></span>
+                <!--  <input type="text" id="status" ng-model="current.status.name" value="{{current.status.name}" /></span> -->
+                <button ng-click="save(current)">save</button>
+            </div>
+            <!--ng-class="completed-{{activity.done}}"-->
+            <ul id="myListStyle" ng-class="styleNg">
+                <li ng-repeat="activity in tasksShown = (listTasks | filter:searchText | filter: filterPriority.value | filter: filterStatus.value) | orderBy:sortColumn.value">
+                    <div id="conteinerList">
+                        <div id="containerTitle" class="superStyle-{{activity.priority.name}}">
+                            <input type="checkbox" ng-model="activity.done" /> {{activity.title |uppercase}} - ({{activity.date | date:"dd/MM/yyyy"}})
+                            <span id="btnTrash">
+                           <button  ng-click="remove(activity)" class="icon-bin" ></button></span>
+                            <!--<a id="editObj" class="icon-pencil" href="#!/editTask/{{activity.title}}" alt="Edit task" title="Edit task"></a>-->
+                            <button id="editObj" class="icon-pencil" ng-click="edit(activity)"></button>
+                        </div>
+                        <div id="containerDescription" class="superStyle-{{activity.priority.name}}">
+                            <span id="styleDescription">{{activity.description}}</span>
+                            <br />
+                            <span id="containerStatus">Status: {{activity.status.name}} </span><br />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="exception" ng-hide="tasksShown.length"><br />
+                <h2><span class="icon-crying"></span> There's nothing to show..</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<input type="checkbox" ng-model="activity.done" />-->

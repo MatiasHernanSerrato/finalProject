@@ -1,0 +1,21 @@
+<div id="containerHome" draggable="false">
+    <div id="containerAddTask" draggable="false">
+        <h1>{{name}}</h1>
+        <form name="formN1" id="addTaskForm" ng-submit="addTask()">
+          <input name="textTitle" id="enter" type="text" class='input-text' ng-model="newAct.title" placeholder="What to be done?" required="requerid"
+          onKeyDown="longTitle()" onKeyUp="longTitle()"></input>
+            <textarea name="textoArea" id="textArea1" class="textAreaStyle" ng-model="newAct.description" onKeyDown="longTextArea()" onKeyUp="longTextArea()"
+             placeholder="Insert a description."></textarea>
+            <input type="date" class='input-date' ng-model="newAct.date" required="required" />
+            <select id="selectType" ng-model="newAct.priority" ng-options="item.name for item in options" required="required">
+              <option value="" disabled="disabled">Select priority</option>
+            </select>
+            <select id="selectType" ng-model="newAct.status" ng-options="itemN.name for itemN in optionsStatus" >
+              <option value="" disabled="disabled">Select status</option>
+            </select><br />
+            <button id="aTask" type="submit" class="styleButtonForm">Add task</button><br />
+        </form>
+          <button id="btnViewTasks" ng-click="go('/myTasks/')" class="styleButtonForm"><span class="icon-paperplane"></span> View Tasks  </button><br />
+    </div>
+</div>
+<!-- <button id="btnRemove" ng-click="remove(activity)"><span class="icon-cross"></span>Remove</button> -->

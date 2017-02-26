@@ -1,0 +1,621 @@
+* {
+  margin  : 0;
+  padding : 0;
+}
+
+body {
+  background-color : #bababa;
+}
+
+header {
+  width            : 100%;
+  margin-bottom    : 5px;
+  overflow         : hidden;
+  background-color : #252932;
+  /* pude modificar lo flotante para que no afecte. */
+}
+
+header .logo {
+  float       : left;
+  margin      : 5px 0px;
+  color       : #f2f2f2;
+  font-size   : 50px;
+  line-height : 50px;
+}
+
+header nav {
+  float       : right;
+  margin-top  : 10px;
+  line-height : 50px;
+}
+
+header nav a {
+  display            : inline-block;
+  padding            : 10px 20px;
+  color              : #fff;
+  text-decoration    : none;
+  font-size          : 18px;
+  font-weight        : bold;
+  line-height        : normal;
+  -o-transition      : all 500ms ease;
+  -webkit-transition : all 500ms ease;
+  transition         : all 500ms ease;
+}
+
+header nav a:hover {
+  border-radius : 50px;
+  background    : #f56f3a;
+}
+
+.wrapper {
+  width     : 90%;
+  max-width : 1000px;
+  margin    : auto;
+  overflow  : hidden;
+}
+
+#menu {
+  text-align : center;
+}
+
+video {
+  width      : 100%;
+  height     : 500px;
+  margin-top : 0;
+}
+
+.btnIntro {
+  width            : 500px;
+  height           : 70px;
+  margin-top       : 5px;
+  color            : #fff;
+  border-radius    : 2px 2px 2px 2px;
+  background-color : #3e6dfb;
+  font-size        : 20px;
+}
+
+@media screen
+       and (max-width : 900px) {
+  .btnIntro {
+    width  : 70%;
+    height : 100px;
+    margin : 2px auto 0;
+  }
+
+  header .logo,
+  header nav {
+    width       : 100%;
+    margin-top  : 5px;
+    text-align  : center;
+    font-size   : 18px;
+    line-height : 20px;
+  }
+}
+
+#imgSection h1 {
+  color      : #f2f2f2;
+  text-align : center;
+}
+
+#showImage {
+  width      : auto;
+  height     : auto;
+  text-align : center;
+}
+
+@media all
+       and (orientation : andscape)
+       and (max-width   : 640px) {
+  #optionOrderBy select {
+    width      : 50%;
+    float      : right;
+    text-align : right;
+  }
+
+  #optionOrderBy span {
+    display     : block;
+    width       : 100%;
+    text-align  : left;
+    font-size   : 16px;
+    line-height : 25px;
+  }
+
+  video {
+    height : auto;
+    margin : 0px;
+  }
+}
+
+#editElement {
+  color            : #f2f2f2;
+  border-radius    : 4px 4px 4px 4px;
+  background-color : #31521e;
+}
+
+#editElement select .selectG {
+  width      : 50%;
+  float      : right;
+  text-align : right;
+}
+
+#editElement input {
+  color            : #f2f2f2;
+  background-color : #252932;
+}
+
+#editElement button {
+  color            : #f2f2f2;
+  background-color : #3b599c;
+}
+
+@media screen
+       and (max-width : 640px) {
+  .wrapper {
+    width : 100%;
+  }
+
+  #optionOrderBy select {
+    width      : 50%;
+    float      : right;
+    text-align : right;
+  }
+
+  #optionOrderBy span {
+    display     : block;
+    width       : 100%;
+    text-align  : left;
+    font-size   : 20px;
+    line-height : 25px;
+  }
+
+  video {
+    height : 200px;
+    margin : 0px;
+  }
+
+  .btnIntro {
+    width         : 100%;
+    height        : 25px;
+    margin-bottom : 15px;
+  }
+}
+
+@media screen
+       and (max-width : 480px) {
+  #styleDescription {
+    font-size : 8px !important;
+  }
+
+  #totalTasks h4 {
+    font-size : 10px;
+  }
+
+  #optionOrderBy {
+    padding : 0px 5px;
+  }
+
+  #editElement {
+    padding : 4px;
+  }
+
+  #optionOrderBy select {
+    width      : 50%;
+    float      : right;
+    text-align : right;
+  }
+
+  #editElement input {
+    width      : 50%;
+    float      : right;
+    text-align : right;
+  }
+
+  #editElement span {
+    display     : block;
+    width       : 100%;
+    text-align  : left;
+    font-size   : 10px;
+    line-height : 25px;
+  }
+
+  #optionOrderBy span {
+    display     : block;
+    width       : 100%;
+    text-align  : left;
+    font-size   : 10px;
+    line-height : 25px;
+  }
+
+  .btnIntro {
+    width         : 70%;
+    height        : 40px;
+    margin-bottom : 20px;
+  }
+
+  #containerHome {
+    margin-bottom : :10px;
+  }
+
+  video {
+    height : auto;
+    margin : 0px;
+  }
+
+  header nav a {
+    font-size : 15px;
+  }
+
+  header .logo,
+  header nav {
+    width       : 100%;
+    margin-top  : 5px;
+    text-align  : center;
+    line-height : 2px;
+  }
+
+  footer#foot {
+    background-color : none;
+    font-size        : 10px;
+  }
+}
+
+#containerHome {
+  position         : relative;
+  margin-top       : 10px;
+  margin-bottom    : 10px;
+  padding          : 20px;
+  border-radius    : 8px;
+  background-color : #252932;
+  box-shadow       : 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                     0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                     0 3px 1px -2px rgba(169, 162, 162, 0.2);
+}
+
+#containerView {
+  height           : 500px;
+  border-radius    : 8px;
+  background-color : #252932;
+  box-shadow       : 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                     0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                     0 3px 1px -2px rgba(169, 162, 162, 0.2);
+}
+
+#myListStyle {
+  list-style : none;
+}
+
+#trueTitle .icon-accessibility {
+  color     : #f2f2f2;
+  font-size : 18px;
+}
+
+.done #containerTitle {
+  color            : #b1b1b1;
+  background-color : #505050;
+  text-decoration  : line-through;
+  font-style       : italic;
+  /* text-shadow: 0px 0px 2px #e4e4e3; */
+}
+
+.completed-true {
+  color           : #003f3e;
+  text-decoration : line-through;
+  font-style      : italic;
+  /* text-shadow: 0px 0px 2px #e4e4e3; */
+}
+
+#containerDescription {
+  display       : block;
+  overflow      : hidden;
+  text-overflow : ellipsis;
+  white-space   : nowrap;
+}
+
+#styleDescription {
+  font-size : 14px;
+}
+
+#movieFlash {
+  background-color : #000;
+}
+
+#basura {
+  align-content : center;
+  align-items   : center;
+  align-self    : center;
+}
+
+#whatThing {
+  background-color : #000;
+}
+
+#optionOrderBy {
+  margin         : 5px 0px 0px 0px;
+  padding-bottom : 5px;
+}
+
+#busqueda {
+  background-color : #252932;
+}
+
+#busqueda .input-text {
+  width            : 90%;
+  height           : 30px;
+  color            : #f2f2f2;
+  border-style     : none;
+  background-color : #252932;
+  outline          : none;
+  font-size        : 20px;
+}
+
+#btnsTask button {
+  width      : 40%;
+  margin-top : 5px;
+}
+
+#busqueda:hover {
+  background-color : #373c46;
+}
+
+#busqueda span {
+  height    : 30px;
+  color     : #f2f2f2;
+  font-size : 20px;
+}
+
+li {
+  height        : auto;
+  margin-top    : 3px;
+  margin-bottom : 10px;
+  padding       : 2px;
+  color         : #f2f2f2;
+  text-align    : center;
+}
+
+.input-text {
+  width      : 90%;
+  height     : 30px;
+  color      : #f2f2f2;
+  background : #252932;
+  outline    : none;
+  font-size  : 20px;
+}
+
+footer#foot {
+  display          : block;
+  position         : fixed;
+  bottom           : 0px;
+  width            : 100%;
+  margin-top       : 10px;
+  color            : white;
+  overflow         : hidden;
+  background-color : black;
+  text-align       : center;
+}
+
+.input-date {
+  -moz-appearance    : none;
+  -o-appearance      : none;
+  -webkit-appearance : none;
+  appearance         : none;
+  width              : 90%;
+  height             : 30px;
+  color              : #f2f2f2;
+  background-color   : #252932;
+  font-size          : 20px;
+}
+
+#btnRemove {
+  color            : #f2f2f2;
+  background-color : #252932;
+  font-family      : sans-serif;
+}
+
+#selectType {
+  width            : 90%;
+  height           : 30px;
+  margin-bottom    : 10px;
+  color            : #f2f2f2;
+  background-color : #252932;
+  font-size        : 20px;
+}
+
+.icon-crying {
+  color            : #0f0f10;
+  border-radius    : 180px;
+  background-color : #5268cc;
+}
+
+.textAreaStyle {
+  -moz-appearance    : none;
+  -o-appearance      : none;
+  -webkit-appearance : none;
+  appearance         : none;
+  width              : 90%;
+  max-width          : 90%;
+  height             : 149px;
+  max-height         : 179px;
+  margin-bottom      : 10px;
+  color              : #f2f2f2;
+  background-color   : #252932;
+  font-size          : 18px;
+}
+
+#addTaskForm input {
+  margin-bottom : 10px;
+}
+
+.likeAContainer {
+  width         : 95%;
+  height        : 90%;
+  margin        : 10px;
+  padding       : 10px;
+  border-radius : 4px 4px 4px 4px;
+  box-shadow    : 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                  0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                  0 3px 1px -2px rgba(169, 162, 162, 0.2);
+  text-align    : center;
+}
+
+#editObj {
+  position        : absolute;
+  right           : 0px;
+  color           : #f2f2f2;
+  border-style    : none;
+  background      : none;
+  outline         : none;
+  text-decoration : none;
+}
+
+#containerAddTask {
+  padding          : 10px 0px;
+  border-radius    : 4px 4px 4px 4px;
+  background-color : #4857a4;
+  box-shadow       : 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                     0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                     0 3px 1px -2px rgba(169, 162, 162, 0.2);
+  text-align       : center;
+}
+
+#containerEditTask {
+  float            : right;
+  background-color : #485b6c;
+}
+
+#containerAddTask .styleButtonForm {
+  width         : 90%;
+  height        : 30px;
+  margin-bottom : 5px;
+  color         : #f2f2f2;
+  border-style  : outset;
+  font-size     : 20px;
+}
+
+#containerOfElements {
+  padding          : 10px;
+  border-radius    : 4px 4px 4px 4px;
+  background-color : #658652;
+  box-shadow       : 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                     0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                     0 3px 1px -2px rgba(169, 162, 162, 0.2);
+  text-align       : center;
+}
+
+#containerOfElements select {
+  color      : #f2f2f2;
+  background : #252932;
+  outline    : none;
+  font-size  : 15px;
+}
+
+#titleOfList {
+  margin-bottom    : 2px;
+  color            : #f2f2f2;
+  border-radius    : 4px 4px 4px 4px;
+  background-color : #31521e;
+}
+
+#areaToShow {
+  height     : 338px;
+  overflow-y : scroll;
+}
+
+#conteinerList {
+  position                   : relative;
+  border-bottom-right-radius : 4px;
+  border-bottom-left-radius  : 4px;
+  box-shadow                 : 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                               0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                               0 3px 1px -2px rgba(169, 162, 162, 0.2);
+}
+
+#containerTitle {
+  padding-top             : 3px;
+  padding-bottom          : 3px;
+  border-top-left-radius  : 4px;
+  border-top-right-radius : 4px;
+}
+
+#containerTitle .styleForPriority {
+  padding     : 4px 10px 4px 10px;
+  text-align  : left;
+  font-family : sans-serif;
+  white-space : pre-line;
+}
+
+#containerStatus {
+  color       : white;
+  text-shadow : 0px 0px 3px #000;
+  font-size   : 14px;
+}
+
+#containerDescription {
+  padding-top                : 3px;
+  padding-bottom             : 3px;
+  border-bottom-right-radius : 4px;
+  border-bottom-left-radius  : 4px;
+}
+
+#containerTitle.superStyle-Normal {
+  background-color : #376ebf;
+}
+
+#containerDescription.superStyle-Normal {
+  background-color : #4783db;
+}
+
+#containerTitle.superStyle-Medium {
+  background-color : #df8d00;
+}
+
+#containerDescription.superStyle-Medium {
+  background-color : #d2ac06;
+}
+
+#containerTitle.superStyle-High {
+  background-color : #bd0101;
+}
+
+#containerDescription.superStyle-High {
+  background-color : #cc0c0c;
+}
+
+.daltonico #containerTitle.superStyle-High {
+  background-image : url("images/colorBlindHighTitle.jpg");
+  text-shadow      : 0px 0px 3px #000;
+}
+
+.daltonico #containerTitle.superStyle-Medium {
+  background-image : url("images/colorBlindMediumTitle.jpg");
+  text-shadow      : 0px 0px 3px #000;
+}
+
+.daltonico #containerTitle.superStyle-Normal {
+  background-image : url("images/colorBlindNormalTitle.jpg");
+  text-shadow      : 0px 0px 3px #000;
+}
+
+#symbol .superStyle-Normal {}
+
+#aTask {
+  background : #2f6ec9;
+}
+
+#btnViewTasks {
+  margin-top       : 5px;
+  background-color : #5cab4f;
+}
+
+#head a span {
+  margin-right : 5px;
+}
+
+#cCompleted {
+  color      : #f2f2f2;
+  background : #648cdb;
+}
+
+#cAll {
+  color      : #f2f2f2;
+  background : #c9422f;
+}

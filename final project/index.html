@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todoList">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-DO List</title>
+    <script type="text/javascript" src="scripts/lib/angular.min.js"></script>
+    <script type="text/javascript" src="scripts/lib/angular-local-storage.min.js"></script>
+    <script type="text/javascript" src="scripts/lib/angular-route.min.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/controllers/introductionController.js"></script>
+    <script type="text/javascript" src="scripts/controllers/editTaskController.js"></script>
+    <script type="text/javascript" src="scripts/controllers/addTaskController.js"></script>
+    <script type="text/javascript" src="scripts/controllers/todoListController.js"></script>
+    <script type="text/javascript" src="scripts/services/listTaskService.js"></script>
+    <script type="text/javascript" src="scripts/functions/functions.js"></script>
+    <script type="text/javascript" src="components/todo-list.js"></script>
+    <script type="text/javascript" src="components/todo-view.js"></script>
+    <link rel="stylesheet" href="styles/master.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <header id="head">
+      <div class="wrapper">
+        <div class="logo"><span class="icon-stackoverflow">To-Do List</span></div>
+        <nav>
+          <a href="#"><span class="icon-home"></span>Home</a>
+          <a href="#!/addTask/"><span class="icon-checkmark"></span>Add task</a>
+          <a href="#!/myTasks/"><span class="icon-paperplane"></span>My tasks</a>
+          <a href="#!/howTo/"><span class="icon-mobile"></span>How to use</a>
+        </nav>
+      </div>
+    </header>
+      <todo-View></todoView>
+        
+  </body>
+
+</html>
