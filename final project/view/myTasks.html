@@ -2,7 +2,7 @@
     <div id="containerOfElements">
         <div id="titleOfList">
             <span id="trueTitle">
-          <h1><span class="icon-paperplane">My tasks <span class="icon-accessibility"><input  type="checkbox" ng-model="styleNg.daltonico" /></span></span>
+          <h1><span class="icon-paperplane">My tasks <span class="icon-accessibility" for="color"><input id="color" type="checkbox" ng-model="styleNg.daltonico" title="Color blind" alt="Color blind"/></span></span>
             </h1>
             </span>
             <div id="busqueda">
@@ -38,7 +38,7 @@
                             <span id="btnTrash">
                            <button  ng-click="remove(activity)" class="icon-bin" ></button></span>
                             <!--<a id="editObj" class="icon-pencil" href="#!/editTask/{{activity.title}}" alt="Edit task" title="Edit task"></a>-->
-                            <button id="editObj" class="icon-pencil" ng-click="edit(activity)"></button>
+                            <button id="editObj" class="icon-pencil" ng-click="edit(activity)" title="Edit this task" alt="Edit this task"></button>
                         </div>
                         <div id="containerDescription" class="superStyle-{{activity.priority.name}}">
                             <span id="styleDescription">{{activity.description}}</span>
