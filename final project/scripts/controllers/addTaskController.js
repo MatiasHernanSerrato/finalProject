@@ -14,6 +14,7 @@ appTodo.controller("addTaskController",function($scope,localStorageService,listT
   $scope.options = listTaskService.optionsPriority();
   $scope.optionsStatus = listTaskService.optionsStatusService();
   $scope.addTask = function(){
+    console.log($scope.newAct.date);
     $scope.newAct.done = false;
     $scope.listTasks.push($scope.newAct);
     $scope.newAct = {};

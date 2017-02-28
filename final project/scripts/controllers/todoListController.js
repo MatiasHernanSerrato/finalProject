@@ -23,7 +23,6 @@ appTodo.controller("todoListController", function($scope, localStorageService, l
     $scope.edit = function(activity) {
         $scope.showEditElement = true;
         $scope.current = activity;
-        console.log(activity);
     }
     $scope.save = function(activity) {
         $scope.showEditElement = false;
