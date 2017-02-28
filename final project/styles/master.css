@@ -98,9 +98,12 @@ video {
 }
 
 #showImage {
-  width      : auto;
-  height     : auto;
   text-align : center;
+}
+#showImage img{
+  width         : 90%;
+  margin-bottom : 10px;
+  height        : auto;
 }
 
 @media all
